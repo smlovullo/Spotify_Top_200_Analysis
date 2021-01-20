@@ -3,6 +3,9 @@ Analysis of the top 200 tracks on Spotify by their audio features made available
 
 This project was completed by Jake Bell and Sean Lovullo as required by the Mathematical Modeling course at Point Loma Nazarene University.
 
+To view the project, download the html file Spotify_Top_200_Analysis.nb.html and open it in a web browser. The data used in the project is from 12/2/2020. To rerun the code and use the current top 200 tracks from Spotify, Spotify API ID and secret codes are required. They are not given in the uploaded file.  
+
+### Introduction
 Spotify is one of the largest media streaming services, with over 50 million songs available and over 250 million monthly users. How does Spotify offer song suggestions to its users? It generates data on every song over multiple categories and uses them to find songs to suggest based on what you like. Publicly accessible features include song length, key, mode, time signature, acousticness, danceability, energy, instrumentalness, liveness, loudness, speechiness, valence, and tempo. Pooling data that is publicly available, we want to answer the following question: can we predict the number of streams a Top 200 song on Spotify will get by finding clusters within the data that are based on the given audio features?  
 
 To find an answer, we will utilize the K-Means clustering algorithm to cluster the top 200 tracks into groups based on Spotify's audio features. Then we will construct a number multiple regression models; there will be one for each cluster and also one ignoring the clusters. We will train the models using 80% of our data and test the models with the remaining 20% to see how well the model fits new data.  
